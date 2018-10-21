@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 60px auto;
+  width: 580px;
+  word-wrap: break-word;
+}
+
+main * {
+  max-width: 580px;
+}
+
+h1,
+h2 {
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.row {
+  display: inline-flex;
+}
+
+.row > * {
+  padding: 0 5px 0 5px;
+}
+
+iframe {
+  border: solid 1px black;
+}
+
+small {
+  font-size: 12px;
+}
+
+section > p {
+  font-size: 20px;
+  line-height: 35px;
+}
