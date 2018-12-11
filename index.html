@@ -21,7 +21,9 @@
   <![endif]-->
   <main>
     <header>
-        <small><p>Website under construction&mdash;information may be partially or completely inaccurate</p></small>
+      <small>
+        <p>Website under construction&mdash;information may be partially or completely inaccurate</p>
+      </small>
       <h1>Partnership Podcast - Natural Language Processing</h1>
       <p><small>by Eric Nguyen</small></p>
     </header>
@@ -42,19 +44,49 @@
       </section>
       <section>
         <h2>Why is it difficult?</h2>
-        <p>Understanding the fundamentals of NLP requires knowledge of computer science, statistics, linguistics,
-          and philosophy. In the case that one would want to design a multilingual NLP system, they would require
-          proficiency in the natural languages which they intend to support. You may know that there are thousands of
-          different natural languages in existence and they can be quite complex and very different from each other.
-          As you can see, NLP can be quite difficult, especially when supporting multiple languages.</p>
+        <h3>Interdisciplinary (<a href="https://www.cl.cam.ac.uk/teaching/2002/NatLangProc/revised.pdf">Reference</a>)</h3>
+        <p>To understand NLP and implement it well, one must be able to integrate knowledge from
+          multiple disciplines, namely math, computer science, linguistics, cognitive science, psychology, and philosophy.</p>
+        <h3>Ambiguity (<a href="https://courses.cs.washington.edu/courses/cse447/18wi/slides/Parsing.pdf">Reference</a>)</h3>
+        <p>"I saw a man on a hill with a telescope." How would a computer interpret ambiguous sentences?</p>
+        <h3>Multilingual support (<a href="https://arxiv.org/pdf/1702.01101.pdf">Reference</a>)</h3>
+        <p>If you thought natural language processing was hard enough for one language, try to do it in multiple languages.</p>
+        <h3>Question generation (<a href="http://www.cs.cmu.edu/~ark/mheilman/questions/papers/heilman-question-generation-dissertation.pdf">Reference</a>)</h3>
+        <p>Consider a machine is given a sentence,</p>
+        <blockquote cite="https://en.wikipedia.org/wiki/Triangle">"A triangle is a polygon with three edges and three vertices."</blockquote>
+        <p>How would a machine go about asking questions related to the sentence, without being explicitly programmed to do so?
+          Would it ask "How many edges does a triangle have"? Or maybe it would ask "What is a polygon with three edges and three vertices"?</p>
       </section>
       <section>
         <h2>What is it used for?</h2>
-        <p>Imagine you are the CEO of a large automobile manufacturing company, but you don't have the time to answer
-          each and every one your clients' calls, texts, and emails.
-          You have a choice: hire hundreds of employees to answer clients, which will cost you millions of dollars, or
-          invest in an less expensive automated chatbot platform which will answer all clients, 24/7, without
-          complaint.</p>
+        <p>Probably the most popular use of NLP is automating tasks concerning natural language. Some of those tasks
+          being word suggestion, spell checking, grammar checking, translating, conversing, data extraction, image captioning, and text
+          summarization.</p>
+        <h3>Word suggestion (<a href="http://modsimworld.org/papers/2015/Natural_Language_Processing.pdf">Reference</a>)</h3>
+        <p>Leveraging NLP, people may be able to type better with word sequence suggestions.</p>
+        <h3>Translation (<a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1162/handouts/cs224n-lecture4-PhraseBasedMT.pdf">Reference</a>)</h3>
+        <p>There is so much information available to everyone these days, however without translation, much of that information becomes
+          inaccessible. NLP allows translation software to be much more accurate than ever.</p>
+        <h3>Conversational AI/Chatbots (<a href="https://www.cs.colorado.edu/~martin/SLP/Updates/1.pdf">Reference</a>)</h3>
+        <p>Conversational AI can provide a better experience for clients. Instead of waiting a long time for someone on the other end
+          to pick up, they can talk to a machine who is on duty 24/7. Other applications of chatbots include therapy,
+          group chat, and voice user interfaces.</p>
+        <h3>Data extraction from unstructured text (<a href="https://ijpds.org/article/view/381/362">Reference</a>)</h3>
+        <p>In situations involving documents or records written in natural language, it is often difficult to extract
+          meaning from them in a timely manner. NLP may be significantly helpful by quickly providing meaningful information
+          from such documents, especially in the healthcare industry in which time can play a huge factor in life or death situations.</p>
+        <h3>Image captioning (<a href="https://cs.stanford.edu/people/karpathy/cvpr2015.pdf">Reference</a>)</h3>
+        <p>NLP can generate text to explain what is happening in images. Considering that it can be used to generate text for images,
+          I would say it most certainly is possible for explaining videos as well, using previous frames as context for the next frame to be captioned.
+          This can be incredibly useful for those with hearing or visual impairment, especially for situational awareness when driving a car, for example.
+        </p>
+        <h3>Text summarization (<a href="https://www.cs.cmu.edu/~nasmith/LS2/das-martins.07.pdf">Reference</a>)</h3>
+        <p>Automated text summarization will instantly make it easier for people to understand complex or lengthy documents. It can be very helpful in the
+          mass media industry for providing quick summaries explaining content, such as news or podcasts.</p>
+        <h3>Quiz making (<a href="https://github.com/atbaker/wikipedia-question-generator">Reference</a>)</h3>
+        <p>NLP could potentially be great for the education industry, allowing students or educators to generate quizzes.
+          These quizzes could be generated using all sorts of different sources, such as informational websites,
+          news articles, or most importantly, textbook pages.</p>
       </section>
       <section>
         <h2>How does it work?</h2>
@@ -69,11 +101,14 @@
       </section>
       <section>
         <h3>Try it out now using DialogFlow!</h3>
-        <iframe id="chatbot" width="580" height="950" src="https://bot.dialogflow.com/7780ebd7-2532-4ef1-be5a-f669dbe9c981">(Insert DialogFlow demo here)</iframe>
+        <iframe id="chatbot" width="580" height="950" src="https://bot.dialogflow.com/7780ebd7-2532-4ef1-be5a-f669dbe9c981">(Insert
+          DialogFlow demo here)</iframe>
       </section>
       <section>
         <h2>Resources</h2>
         <ol>
+          <li><a href="https://scholar.google.com/scholar?as_ylo=2017&q=natural+language+processing&hl=en&as_sdt=0,39">https://scholar.google.com/scholar?as_ylo=2017&q=natural+language+processing&hl=en&as_sdt=0,39</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Natural_language_processing">https://en.wikipedia.org/wiki/Natural_language_processing</a></li>
           <li><a href="https://www.cl.cam.ac.uk/teaching/2002/NatLangProc/revised.pdf">https://www.cl.cam.ac.uk/teaching/2002/NatLangProc/revised.pdf</a></li>
           <li><a href="https://www.cs.utexas.edu/~mooney/cs343/slide-handouts/nlp.pdf">https://www.cs.utexas.edu/~mooney/cs343/slide-handouts/nlp.pdf</a></li>
           <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-864-advanced-natural-language-processing-fall-2005/lecture-notes/lec01.pdf">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-864-advanced-natural-language-processing-fall-2005/lecture-notes/lec01.pdf</a></li>
@@ -84,6 +119,15 @@
           <li><a href="https://courses.cs.washington.edu/courses/cse447/18wi/slides/Parsing.pdf">https://courses.cs.washington.edu/courses/cse447/18wi/slides/Parsing.pdf</a></li>
           <li><a href="https://web.stanford.edu/class/cs224n/midterm/cs224n-midterm-2018-solution.pdf">https://web.stanford.edu/class/cs224n/midterm/cs224n-midterm-2018-solution.pdf</a></li>
           <li><a href="https://www.cs.cornell.edu/courses/cs5740/2018sp/lectures/02-textclass.pdf">https://www.cs.cornell.edu/courses/cs5740/2018sp/lectures/02-textclass.pdf</a></li>
+          <li><a href="http://modsimworld.org/papers/2015/Natural_Language_Processing.pdf">http://modsimworld.org/papers/2015/Natural_Language_Processing.pdf</a></li>
+          <li><a href="http://cs229.stanford.edu/proj2017/final-posters/5147972.pdf">http://cs229.stanford.edu/proj2017/final-posters/5147972.pdf</a></li>
+          <li><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/ie-dispruptive-chat-bots.pdf">https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/ie-dispruptive-chat-bots.pdf</a></li>
+          <li><a href="https://cs.stanford.edu/people/karpathy/cvpr2015.pdf">https://cs.stanford.edu/people/karpathy/cvpr2015.pdf</a></li>
+          <li><a href="http://media-lab.ccny.cuny.edu/wordpress/Publications/ACVR201604.pdf">http://media-lab.ccny.cuny.edu/wordpress/Publications/ACVR201604.pdf</a></li>
+          <li><a href="https://www.cs.colorado.edu/~martin/SLP/Updates/1.pdf">https://www.cs.colorado.edu/~martin/SLP/Updates/1.pdf</a></li>
+          <li><a href="http://www.cs.cmu.edu/~ark/mheilman/questions/papers/heilman-question-generation-dissertation.pdf">http://www.cs.cmu.edu/~ark/mheilman/questions/papers/heilman-question-generation-dissertation.pdf</a></li>
+          <li><a href="https://ijpds.org/article/view/381/362">https://ijpds.org/article/view/381/362</a></li>
+          <li><a href="https://arxiv.org/pdf/1702.01101.pdf">https://arxiv.org/pdf/1702.01101.pdf</a></li>
         </ol>
       </section>
     </article>

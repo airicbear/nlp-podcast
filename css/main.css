@@ -26,14 +26,6 @@ h3 {
   font-weight: 600;
 }
 
-.row {
-  display: inline-flex;
-}
-
-.row > * {
-  padding: 0 5px 0 5px;
-}
-
 iframe {
   border: solid 1px black;
 }
@@ -45,4 +37,15 @@ small {
 section > p {
   font-size: 20px;
   line-height: 35px;
+}
+
+p > sup {
+  font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0;
+    display: flex;
+  }
 }
