@@ -3,18 +3,23 @@
 }
 
 body {
+  background-color: rgba(0, 0, 0, 0.75);
   margin: 0;
   font-family: sans-serif;
 }
 
 main {
-  margin: 60px auto;
-  width: 580px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  margin: 0 auto;
+  padding: 5vmin;
+  width: 50vw;
   word-wrap: break-word;
 }
 
 main * {
-  max-width: 580px;
+  max-width: 50vw;
 }
 
 h1,
@@ -28,19 +33,35 @@ h3 {
 
 iframe {
   border: solid 1px black;
+  width: 100%;
 }
 
 small {
   font-size: 12px;
 }
 
-section > p {
+section > p,
+blockquote {
   font-size: 20px;
   line-height: 35px;
 }
 
+blockquote {
+  font-style: italic; 
+}
+
 p > sup {
   font-size: small;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    width: 100vw;
+  }
+
+  main * {
+    max-width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
